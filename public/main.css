@@ -1,0 +1,456 @@
+html {
+    font-family: "Onest", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+.hidden {
+    display: none !important;
+}
+.container {
+    max-width: 1300px;
+    padding: 70px 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.blocks {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.block {
+    position: relative;
+    max-width: 630px;
+    width: 100%;
+    height: 560px;
+    background-color: rgba(79, 114, 217, 1);
+    border-radius: 30px;
+}
+.block.dark {
+    background-color: #343a40;
+}
+.block__img {
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.block__container {
+    position: relative;
+    padding: 40px 5px 40px 22px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    z-index: 3;
+}
+.block__title {
+    font-size: 50px;
+    font-weight: 500;
+}
+.block__accent {
+    display: inline-block;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: white;
+}
+.block__items {
+    position: absolute;
+    bottom: 22px;
+    right: 22px;
+    display: flex;
+    gap: 22px;
+}
+
+/* HOLIDAY */
+
+.holiday {
+    position: relative;
+    max-width: 1336px;
+    height: 760px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+    padding-bottom: 110px;
+}
+.holiday__title {
+    font-size: 34px;
+    font-weight: 500;
+    color: #343a40;
+}
+.holiday__accent {
+    color: #4f72d9;
+}
+.holiday__description {
+    color: #343a40;
+    max-width: 793px;
+    width: 100%;
+    font-size: 24px;
+}
+
+.holiday__block {
+    position: absolute;
+    width: 237px;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    z-index: 2;
+    background-size: cover;
+}
+
+.first {
+    top: 180px;
+    width: 260px;
+    left: 0px;
+    background-image: url("images/holiday_1.png");
+}
+.first p {
+    padding-top: 50px;
+    transform: rotate(-12.02deg);
+}
+.second {
+    bottom: 110px;
+    left: 14.97vw;
+    background-image: url("images/holiday_2.png");
+}
+.second p {
+    transform: rotate(3deg);
+}
+
+.third {
+    width: 244px;
+    top: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    background-image: url("images/holiday_3.png");
+}
+.third p {
+    transform: rotate(-3deg);
+}
+
+.fourth {
+    bottom: 110px;
+    right: 14.97vw;
+    width: 271px;
+    background-image: url("images/holiday_4.png");
+}
+.fourth p {
+    padding-top: 55px;
+    transform: rotate(-5deg);
+}
+
+.fifth {
+    top: 180px;
+    right: 10px;
+    background-image: url("images/holiday_5.png");
+}
+.fifth p {
+    transform: rotate(-11deg);
+}
+
+/* MOVIE */
+.movie {
+    padding: 60px 0;
+    max-width: 100%;
+    background-color: #f2f9ff;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #343a40;
+    text-align: center;
+    border-radius: 30px;
+}
+.movie__title {
+    font-size: 34px;
+    font-weight: 500;
+    max-width: 1042px;
+    width: 100%;
+    margin-bottom: 26px;
+}
+.movie__description {
+    font-size: 24px;
+    max-width: 971px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.movie__img {
+    width: 100%;
+}
+.block__subtitle {
+    max-width: 551px;
+    font-size: 34px;
+    font-weight: 500;
+    margin-bottom: 23px;
+}
+.block__input {
+    width: 332px;
+    height: 65px;
+    border: 1px solid #f2f9ff;
+    border-radius: 20px;
+    padding: 20px 5px;
+    margin-bottom: 22px;
+}
+::placeholder {
+    color: #f2f9ff;
+}
+.block__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 332px;
+    width: 100%;
+    height: 65px;
+    background-color: #f2f9ff;
+    color: #343a40;
+    border-radius: 20px;
+    margin-bottom: 23px;
+    font-weight: 500;
+}
+.block__rule {
+    display: flex;
+    gap: 17px;
+}
+.block__rule input {
+    height: 20px;
+    width: 20px;
+    zoom: 1.5;
+}
+.block__container.bottom {
+    padding: 0;
+    z-index: 2;
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+}
+.block__description {
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+.block__balls,
+.block__petard {
+    position: absolute;
+    z-index: 1;
+}
+.block__balls {
+    width: 148px;
+    height: 187px;
+    top: 174px;
+    right: 0;
+}
+.block__petard {
+    top: 19px;
+    right: 18px;
+    width: 162px;
+    height: 162px;
+}
+
+.block__success {
+    padding: 10px;
+    height: 166px;
+    max-width: 521px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #f2f9ff;
+}
+
+@media (max-width: 834px) {
+    .block__title {
+        font-size: 30px;
+    }
+    .holiday__title,
+    .movie__title {
+        font-size: 24px;
+    }
+    .holiday__description,
+    .holiday__block,
+    .movie__description,
+    .block__description {
+        font-size: 18px;
+    }
+    .container {
+        padding: 50px 10px;
+    }
+    .block {
+        height: 328px;
+    }
+    .movie {
+        height: 500px;
+        padding: 60px 0;
+    }
+    .movie__title,
+    .movie__description {
+        padding: 0 20px;
+    }
+    .block__container {
+        padding: 20px 12px;
+    }
+    .block__subtitle {
+        font-size: 22px;
+        padding-right: 10px;
+        margin-bottom: 10px;
+    }
+    .block__button,
+    .block__input {
+        height: 38px;
+        font-size: 12px;
+        max-width: 249px;
+        margin-bottom: 13px;
+    }
+    .block__rule {
+        gap: 7px;
+        font-size: 12px;
+    }
+    .block__balls {
+        width: 85px;
+        height: 110px;
+        top: 100px;
+        right: 0;
+    }
+    .block__petard {
+        top: 20px;
+        right: 20px;
+        width: 74px;
+        height: 75px;
+    }
+    .holiday__description,
+    .holiday__block,
+    .movie__description,
+    .block__description {
+        margin-bottom: 12px;
+    }
+    .block__description {
+        font-size: 14px;
+        max-width: 301px;
+    }
+}
+@media (max-width: 420px) {
+    .block__title {
+        font-size: 24px;
+    }
+    .holiday__title,
+    .movie__title,
+    .block__subtitle {
+        font-size: 18px;
+    }
+    .holiday__description,
+    .holiday__block,
+    .movie__description,
+    .block__description {
+        font-size: 14px;
+    }
+    .container {
+        padding: 30px 10px;
+    }
+    .movie {
+        height: 350px;
+        padding: 30px 0;
+    }
+    .blocks {
+        flex-direction: column;
+    }
+    .block {
+        height: 270px;
+    }
+    .block.bottom {
+        height: 320px;
+    }
+    .block__items {
+        bottom: 10px;
+        right: 15px;
+    }
+    .block__item {
+        max-width: 30px;
+        max-height: 30px;
+    }
+    .holiday {
+        height: 500px;
+    }
+    .holiday__block {
+        position: absolute;
+        width: 127px;
+        height: 131px;
+        object-fit: cover;
+        font-size: 14px;
+    }
+
+    .holiday__block.third {
+        top: 210px;
+    }
+    .holiday__block.first p {
+        padding-top: 0;
+    }
+    .holiday__block.fourth p {
+        padding-top: 10px;
+    }
+    .holiday__block.second,
+    .holiday__block.fourth {
+        bottom: 50px;
+    }
+    .block__subtitle {
+        font-size: 18px;
+    }
+    .block__balls {
+        width: 74px;
+        height: 94px;
+    }
+    .block__petard {
+        width: 62px;
+        height: 62px;
+    }
+    .block__rule input {
+        zoom: 1;
+    }
+    .block__success {
+        height: 120px;
+    }
+}
+@media (max-width: 320px) {
+    .block__title {
+        font-size: 20px;
+    }
+    .block {
+        height: 280px;
+    }
+    .holiday {
+        height: 540px;
+    }
+    .holiday__block.first,
+    .holiday__block.fifth {
+        top: 210px;
+    }
+    .holiday__block.second {
+        left: 0;
+    }
+    .holiday__block.third {
+        top: 280px;
+    }
+    .holiday__block.fourth {
+        right: 0;
+    }
+    .block__subtitle {
+        font-size: 14px;
+        margin-bottom: 11px;
+    }
+    .block__rule {
+        font-size: 10px;
+    }
+    .block__balls {
+        top: 10px;
+    }
+}
